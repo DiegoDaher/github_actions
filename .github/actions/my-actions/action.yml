@@ -3,4 +3,3 @@ description: "Test my action"
 
 runs:
   using: "composite"
-  
