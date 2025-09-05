@@ -7,11 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout code
       uses: actions/checkout@v5.0.0
     
     - name: ls
-      uses: ./.github/actions/my-actions
+      uses: ./.github/actions/my-actions 
+
 # name : Test
 
 # # on : [push, pull_request]
