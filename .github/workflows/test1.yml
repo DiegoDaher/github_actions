@@ -15,7 +15,7 @@ jobs:
 
         # env:
         #   STEP_MY_VAR: Nivel Step
-        run: echo "Valor ${{ vars.ENV_CONTEXT_VAR }}"
+        run: echo "Valor ${{ vars.MY_VAR_2 }}"
         
 
 
