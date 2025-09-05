@@ -12,6 +12,9 @@ jobs:
     
     - name: ls
       uses: ./.github/actions/my-actions 
+      with:
+        message: "Diego"
+        
 
 # name : Test
 
