@@ -1,20 +1,39 @@
-name: Test Composite Action
+name: Ejemplo de Composite Action
 
 on: [push]
 
 jobs:
-  local-action: 
+  say-hello: 
     runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v5.0.0
     
-    - name: ls
-      uses: ./.github/actions/my-actions 
-      with:
-        message: "Diego"
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: example
+        ports:
+          - 3306:3306
         
+
+
+
+# name: Test Composite Action
+
+# on: [push]
+
+# jobs:
+#   local-action: 
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v5.0.0
+    
+#     - name: ls
+#       uses: ./.github/actions/my-actions 
+#       with:
+#         message: "Diego"
+
 
 # name : Test
 
