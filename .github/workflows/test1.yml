@@ -1,19 +1,19 @@
-name: Ejemplo de Composite Action
+# name: Ejemplo de Composite Action
 
-on: [push]
+# on: [push]
 
-jobs:
-  # say-hello: 
-  local-action:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ls
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{secrets.SSH_KEY}}">> ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H 127.0.1.1 >> ~/.ssh/known_hosts
-          cat ~/.ssh/known_hosts
+# jobs:
+#   # say-hello: 
+#   local-action:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: ls
+#         run: |
+#           mkdir -p ~/.ssh
+#           echo "${{secrets.SSH_KEY}}">> ~/.ssh/id_rsa
+#           chmod 600 ~/.ssh/id_rsa
+#           ssh-keyscan -H 127.0.1.1 >> ~/.ssh/known_hosts
+#           cat ~/.ssh/known_hosts
 
 
 
