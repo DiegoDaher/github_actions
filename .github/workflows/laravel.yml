@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   laravel-test:
-    runs-on: macos-13
+    runs-on: windows-2019
 
     steps:
     - name: ls
-      run: ls -la
+      run: dir
 
 #     services:
 #       mysql:
