@@ -43,7 +43,9 @@ jobs:
       run: ls
 
     - name: Artifact
+      if: failure()
       uses: actions/upload-artifact@v3
       with:
         name: artifacts
-        path: composer.json
+        path:
+          - storage/logs/laravel.log
